@@ -1,0 +1,50 @@
+.hotel {
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+
+        text-align: center;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 12px 15px;
+    }
+
+    &__text {
+        font-family: Montserrat Alternates;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.21;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend %link;
+        text-align: center;
+        width: 109px;
+        height: 30px;
+        background-color: #ffeb36;
+        border-radius: 12px;
+
+        font-family: Montserrat Alternates;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 1.37;
+
+        &:hover {
+            background-color: #015b62;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.map {
+    &__list {
+        @extend %list;
+    }
+    &__title {
+        background-color: #c9eafb;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    &__picture {
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        margin-right: 44px;
+        margin-left: 44px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend %link;
+        text-align: center;
+        width: 109px;
+        height: 30px;
+        background-color: #ffeb36;
+        border-radius: 12px;
+
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 11px;
+
+        &:hover {
+            background-color: #015b62;
+            color: white;
+        }
+    }
+
+    &__icon {
+        margin-left: 9px;
+    }
+}

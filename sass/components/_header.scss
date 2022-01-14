@@ -1,0 +1,131 @@
+.header {
+    background-color: #c9eafb;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 0.1px solid;
+    border-color: black;
+
+    position: relative;
+    &__container {
+    }
+
+    &__icons {
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    &__list {
+        @extend %list;
+        @extend %link;
+        display: flex;
+
+        font-family: Montserrat Alternates;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    &__item {
+        margin-right: 24px;
+    }
+
+    &__link {
+        @extend %link;
+    }
+}
+
+.social {
+    margin-left: auto;
+    &__insta {
+        @extend %link;
+        margin-right: 0;
+    }
+
+    &__call {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        margin-left: 18px;
+    }
+}
+
+.tel-menu {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: white;
+    transition: top 250ms linear;
+
+    &.is-open {
+        top: 0;
+    }
+
+    &__exit-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 15px;
+        margin-top: 15px;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__exit-icon {
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    &__list {
+        @extend %list;
+    }
+
+    &__logo {
+        width: 150px;
+    }
+
+    &__item {
+    }
+
+    &__item--up {
+        margin-top: 15px;
+    }
+    &__link {
+        @extend %link;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 12px;
+
+        display: flex;
+        align-items: center;
+
+        max-width: 209px;
+        height: 28px;
+        background: #ffeb36;
+        border-radius: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__icon {
+        margin-right: 10px;
+    }
+}
